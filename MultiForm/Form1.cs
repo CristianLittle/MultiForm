@@ -20,7 +20,23 @@ namespace MultiForm
         private void btnShowForm_Click(object sender, EventArgs e) 
         {
             FrmTwo two = new FrmTwo();
-            two.ShowDialog();
+            two.lblShare.Text = txtShared.Text;
+            two.Show();
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            this.BackColor = Color.LightGreen;
+        }
+
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Red;
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

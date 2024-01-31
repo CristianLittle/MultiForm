@@ -16,5 +16,10 @@ namespace MultiForm
         {
             InitializeComponent();
         }
+
+        private void FrmTwo_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
